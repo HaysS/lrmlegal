@@ -7,7 +7,6 @@ import Header from '../components/header'
 import Sidebar from '../components/sidebar'
 
 import './index.css'
-import '../styles/layout-overide.css'
 
 const Layout = ({ children, data }) => (
   <div>
