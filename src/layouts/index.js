@@ -9,8 +9,8 @@ import Portfolio from '../components/portfolio'
 import Footer from '../components/footer'
 import Copyright from '../components/copyright'
 
-import '../styles/index.css'
 import '../styles/fonts.css'
+import '../styles/index.css'
 
 const Layout = ({ children, data }) => (
   <div>

@@ -306,7 +306,7 @@
   
   .title h2
   {
-    font-size: 2.8em;
+    font-size: 2.8em !important;
     color: #261300;
   }
   
@@ -347,6 +347,11 @@
   #logo h1
   {
     font-size: 3.5em;
+  }
+
+  #logo h2
+  {
+    font-size: 1.5em !important;
   }
   
   
