@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import '../styles/index.css'
 
-const Header = () => (
+const Welcome = () => (
   <div id="wrapper2">
     <div id="welcome" className="container">
         <div className="left-col">
@@ -19,4 +19,4 @@ const Header = () => (
   </div>
 )
 
-export default Header
+export default Welcome

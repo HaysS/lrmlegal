@@ -5,9 +5,10 @@ import Media from 'react-media'
 
 import Header from '../components/header'
 import Welcome from '../components/welcome'
-import Sidebar from '../components/sidebar'
+import Portfolio from '../components/portfolio'
 
 import '../styles/index.css'
+import '../styles/fonts.css'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -21,6 +22,7 @@ const Layout = ({ children, data }) => (
     <div id="wrapper1">
       <Header siteTitle={data.site.siteMetadata.title} />
       <Welcome />
+      <Portfolio />
     </div>
   </div>
 )
