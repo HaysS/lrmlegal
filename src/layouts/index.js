@@ -6,6 +6,7 @@ import Media from 'react-media'
 import Header from '../components/header'
 import Welcome from '../components/welcome'
 import Portfolio from '../components/portfolio'
+import Footer from '../components/footer'
 
 import '../styles/index.css'
 import '../styles/fonts.css'
@@ -24,6 +25,7 @@ const Layout = ({ children, data }) => (
       <Welcome />
       <Portfolio />
     </div>
+    <Footer />
   </div>
 )
 
