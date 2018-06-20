@@ -7,6 +7,7 @@ import Header from '../components/header'
 import Welcome from '../components/welcome'
 import Portfolio from '../components/portfolio'
 import Footer from '../components/footer'
+import Copyright from '../components/copyright'
 
 import '../styles/index.css'
 import '../styles/fonts.css'
@@ -26,6 +27,7 @@ const Layout = ({ children, data }) => (
       <Portfolio />
     </div>
     <Footer />
+    <Copyright />
   </div>
 )
 
