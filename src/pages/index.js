@@ -2,13 +2,18 @@ import React from "react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
 
+import Welcome from '../components/welcome'
+import Portfolio from '../components/portfolio'
+
 import '../styles/blog-listing.css';
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
     <div className="blog-posts">
-      {posts
+      <Welcome />
+      <Portfolio />
+      {/*{posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
@@ -20,7 +25,7 @@ export default function Index({ data }) {
               <p>{post.excerpt}</p>
             </div>
           );
-        })}
+        })} */}
     </div>
   );
 }

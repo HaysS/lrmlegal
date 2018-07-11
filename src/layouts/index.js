@@ -4,8 +4,6 @@ import Helmet from 'react-helmet'
 import Media from 'react-media'
 
 import Header from '../components/header'
-import Welcome from '../components/welcome'
-import Portfolio from '../components/portfolio'
 import Footer from '../components/footer'
 import Copyright from '../components/copyright'
 
@@ -23,11 +21,10 @@ const Layout = ({ children, data }) => (
     />
     <div id="wrapper1">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Welcome />
-      <Portfolio />
+      {children()}
     </div>
     <Footer />
-    <Copyright />
+    <Copyright /> 
   </div>
 )
 
