@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'The Law Office of Leo R. Morales',
   },
   plugins: [
   	'gatsby-plugin-react-helmet',

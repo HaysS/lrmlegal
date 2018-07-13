@@ -9,10 +9,21 @@ const Header = () => (
         <span>Smart Lawyer. Fast Results.</span> </div>
       <div id="menu">
         <ul>
-          <li className="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-          <li><a href="#" accesskey="2" title="">About Us</a></li>
-          <li><a href="#" accesskey="3" title="">Testimonials</a></li>
-          <li><a href="#" accesskey="5" title="">Contact Us</a></li>
+          <li>
+            <Link to="/" activeClassName="current_page_item">Homepage</Link>
+          </li>
+          <li>
+            <Link to="/about-us/" activeStyle="">About Us</Link>
+          </li>
+          <li>
+            <Link to="/" activeStyle="">Testimonials</Link>
+          </li>
+          <li>
+            <Link to="/" activeStyle="">Contact Us</Link>
+          </li>
+          {/*<li><a href="#" accesskey="2" title=""></a></li>
+          <li><a href="#" accesskey="3" title=""></a></li>
+          <li><a href="#" accesskey="5" title=""></a></li>*/}
         </ul>
       </div>
     </div>
