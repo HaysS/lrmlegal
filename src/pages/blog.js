@@ -2,11 +2,11 @@ import React from "react";
 
 import '../styles/blog-listing.css';
 
-const AboutUs = () => {
+const Blog = () => {
   return (
     <div>
     </div>
   );
 }
 
-export default AboutUs
+export default Blog

@@ -13,13 +13,16 @@ const Header = () => (
             <Link to="/" activeClassName="current_page_item">Homepage</Link>
           </li>
           <li>
-            <Link to="/about-us/" activeStyle="">About Us</Link>
+            <Link to="/about/" activeStyle="">About Us</Link>
           </li>
           <li>
-            <Link to="/" activeStyle="">Testimonials</Link>
+            <Link to="/testimonials/" activeStyle="">Testimonials</Link>
           </li>
           <li>
-            <Link to="/" activeStyle="">Contact Us</Link>
+            <Link to="/contact/" activeStyle="">Contact Us</Link>
+          </li>
+          <li>
+            <Link to="/blog/" activeStyle="">Blog</Link>
           </li>
           {/*<li><a href="#" accesskey="2" title=""></a></li>
           <li><a href="#" accesskey="3" title=""></a></li>
