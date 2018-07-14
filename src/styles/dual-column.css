@@ -1,0 +1,51 @@
+#col-wrapper {
+	width: 1200px;
+	margin: 0px auto;
+  overflow: hidden;
+	background-color: black;
+}
+
+#profile {
+	height: 100%;
+  padding: 2em 2em;
+	background-color: white;
+	background-color: lightblue;
+	text-align: center;
+}
+
+#profile-title {
+  text-align: left;
+}
+
+#profile-body {
+  padding-top: 1em;
+}
+
+#profile-text {
+  text-align: left;
+}
+
+.photo {
+  float: left;
+  padding: 1em 2em;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+  background-color: red;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

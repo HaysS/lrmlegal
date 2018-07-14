@@ -341,6 +341,7 @@
   #logo
   {
     padding: 3em 0em;
+    padding-bottom: 2em;
     text-align: center;
   }
   
@@ -393,14 +394,15 @@
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
-
   #menu
   {
+    background-color: #86b7e8;
   }
   
   #menu ul
   {
     text-align: center;
+    margin-bottom: 0em;
   }
   
   #menu li
@@ -447,7 +449,7 @@
 
   #wrapper1
   {
-    background: #FFF;
+    background: #e8e8e8;
   }
 
   #wrapper2
