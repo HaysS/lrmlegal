@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Profile from '../components/profile';
+import SidebarForm from '../components/sidebar-form';
 
 import '../styles/blog-listing.css';
 import '../styles/dual-column.css';
@@ -12,6 +13,7 @@ const About = () => {
       	<Profile />
       </div>
       <div className="column right">
+      	<SidebarForm />
       </div>
     </div>
   );
