@@ -396,7 +396,7 @@
 /*********************************************************************************/
   #menu
   {
-    background-color: #86b7e8;
+    background-color: #244A72;
   }
   
   #menu ul
@@ -421,7 +421,7 @@
     font-weight: 600;
     text-transform: uppercase;
     outline: 0;
-    color: #3C3C3C;
+    color: #FFF;
   }
   
   #menu li:hover a, #menu li.active a, #menu li.active span
