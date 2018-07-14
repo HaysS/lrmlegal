@@ -1,13 +1,11 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-export default function Template({
-  data 
-}) {
+export default function Template({data}) {
   const post = data.markdownRemark; 
   return (
     <div className="blog-post-container">
-     <Helmet title={`CodeStack - ${post.frontmatter.title}`} />
+     <Helmet title={`Leo R. Morales - ${post.frontmatter.title}`} />
       <div className="blog-post">
         <h1>{post.frontmatter.title}</h1>
         <div
