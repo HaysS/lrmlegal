@@ -30,13 +30,22 @@ class SidebarForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-
-    if(!this.validateEmail(this.state.email)) {
-      alert('You have entered an invalid email.')
-    }
-    // alert('Testing validateEmail function... \n The following input email '+this.state.email+' is valid?'+this.validateEmail(this.state.email));
     // alert('This data was submitted: name: '+this.state.name+' phone: '+this.state.phone+' email: '+this.state.email+' message: '+this.state.message);
 
+    if(this.validateEmail(this.state.email) && this.validateName(this.state.name)){
+      alert('This data was submitted: name: '+this.state.name+' phone: '+this.state.phone+' email: '+this.state.email+' message: '+this.state.message);
+
+    } else {
+      if(!this.validateEmail(this.state.email)) 
+        alert('You have entered an invalid email.')
+
+      if(!this.validateName(this.state.name))
+        alert('You have entered an invalid name.')
+    }
+  }
+
+  validateName(name) {
+    return name.length > 0 && name.length < 30 ? true : false
   }
 
   validateEmail(email) {
