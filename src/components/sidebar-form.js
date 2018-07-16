@@ -110,22 +110,11 @@ class SidebarForm extends React.Component {
         <hr />
         <div id="body">
           <form onSubmit={this.handleSubmit}>
-            <label>
-              Name: {/*all form inputs must have a name="..." attribute to work with Formspree (which is being used)*/}
-              <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
-            </label>
-            <label>
-              Phone Number:
-              <input type="text" name="phone" value={this.state.phone} onChange={this.handleChange} />
-            </label>
-            <label>
-              Email:
-              <input type="email" name="email" value={this.state.email} onChange={this.handleChange} />
-            </label>
-            <label>
-              Message:
-              <textarea type="text" name="message" value={this.state.message} onChange={this.handleChange} />
-            </label>
+            {/*all form inputs must have a name="..." attribute to work with Formspree (which is being used)*/}
+            <input type="text" name="name" value={this.state.name} placeholder={"Full name"} onChange={this.handleChange} />
+            <input type="text" name="phone" value={this.state.phone} placeholder={"Phone number"} onChange={this.handleChange} />
+            <input type="email" name="email" value={this.state.email} placeholder={"Email"} onChange={this.handleChange} />
+            <textarea type="text" name="message" value={this.state.message} placeholder={"Type your message here..."} onChange={this.handleChange} />
             <input type="submit" value="Submit" />
           </form>
         </div>
