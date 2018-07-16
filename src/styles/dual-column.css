@@ -40,7 +40,6 @@
   width: 35%;
 }
 
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -52,12 +51,18 @@ hr {
   margin: 0.5em 3em;
 }
 
+/* Contact page styling */
+
+#contact-section {
+  padding: 2em 2em;
+  width: 60%;
+}
+
+#contact-section #title {
+  text-align: center;
+}
 
 /* Form styling */
-
-.column .left .form {
-  margin-left: 5%;
-}
 
 #sidebar-section {
   margin-top: 2em;

@@ -14,7 +14,7 @@ const About = () => {
       </div>
       <div className="column right">
       	<div id="sidebar-section">
-          <SidebarForm />
+          <SidebarForm title="Free Consultation"/>
         </div>
       </div>
     </div>

@@ -8,10 +8,8 @@ import '../styles/blog-listing.css';
 const Contact = () => {
   return (
     <div id="col-wrapper">
-      <div className="column left">
-      	<div id="sidebar-section">
-      		<SidebarForm />
-      	</div>
+      <div id="contact-section" className="column left">
+  		<SidebarForm title={"Free Consultation Here"}/>
       </div>
       <div className="column right">
       	<Profile />
