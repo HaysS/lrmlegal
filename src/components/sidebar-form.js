@@ -42,38 +42,13 @@ class SidebarForm extends React.Component {
     }
   }
 
-  // sendFormData() {
-  //   const formData = new FormData()
-  //   formData.append("name", this.state.name)
-  //   formData.append("phone", this.state.phone)
-  //   formData.append("email", this.state.email)
-  //   formData.append("message", this.state.message)
-  //   formData.append("_gotcha", "") //This is to prevent spam
-
-  //   const req = new XMLHttpRequest()
-  //   const url = "https://formcarry.com/s/q3-3INEjAYw"
-  //   req.open('POST', url) //POST to formspree, which will forward to email at end of url
-
-  //   /////////////This is used to test the xmlhttp request
-  //   req.onreadystatechange = function() {
-  //     if(req.readyState == 4 && req.status == 200) {
-  //       alert("status " + req.responseText);
-  //       console.log("status " + req.responseText);
-  //     }
-  //   }
-
-  //   req.send(formData)
-
-  //   this.clearFormData()
-  // }
-
   sendFormData() {
     const formData = new FormData()
     formData.append("name", this.state.name)
     formData.append("phone", this.state.phone)
     formData.append("email", this.state.email)
     formData.append("message", this.state.message)
-    formData.append("_gotcha", "") //This is to prevent spam
+    formData.append("_gotcha", "") //prevents spam
 
     const FORMSPREE_URL = "//formspree.io/haysiszues@gmail.com"
 
@@ -91,19 +66,11 @@ class SidebarForm extends React.Component {
             console.log(response);
           }
           else {
-            // you still going on about validation and error handling?
+            //validation and error handling goes here
           }          
         });
 
-    /////////////This is used to test the xmlhttp request
-    // req.onreadystatechange = function() {
-    //   if(req.readyState == 4 && req.status == 200) {
-    //     alert("status " + req.responseText);
-    //     console.log("status " + req.responseText);
-    //   }
-    // }
-
-    // this.clearFormData()
+    this.clearFormData()
   }
 
   formDataToJson(formData) {
@@ -144,7 +111,7 @@ class SidebarForm extends React.Component {
         <div id="body">
           <form onSubmit={this.handleSubmit}>
             <label>
-              Name: {/*all form inputs must have a name attribute to work with Formspree (which is being used)*/}
+              Name: {/*all form inputs must have a name="..." attribute to work with Formspree (which is being used)*/}
               <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
             </label>
             <label>
