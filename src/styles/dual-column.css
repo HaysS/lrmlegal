@@ -74,6 +74,10 @@ hr {
   overflow: hidden;
 }
 
+textarea {
+  resize: vertical; /* Only allow vertical resizing to prevent styling probssss */
+}
+
 input[type="text"],
 input[type="date"],
 input[type="datetime"],
