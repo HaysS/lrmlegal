@@ -13,7 +13,9 @@ const About = () => {
       	<Profile />
       </div>
       <div className="column right">
-      	<SidebarForm />
+      	<div id="sidebar-section">
+          <SidebarForm />
+        </div>
       </div>
     </div>
   );
