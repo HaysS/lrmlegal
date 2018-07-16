@@ -59,7 +59,7 @@ class SidebarForm extends React.Component {
         'Content-Type': 'application/json'
       },
     })
-    .catch(error => console.error('Fetch Error: ', error))
+    .catch(error => console.error('Fetch error in sidebar-form component: ', error))
     .then(response => response.json())
     .then(response => {
           if (response.success === 'email sent') {
