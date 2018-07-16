@@ -50,7 +50,7 @@ class SidebarForm extends React.Component {
     formData.append("message", this.state.message)
     formData.append("_gotcha", "") //prevents spam
 
-    const FORMSPREE_URL = "//formspree.io/haysiszues@gmail.com"
+    const FORMSPREE_URL = "//formspree.io/haysiszues@gmail.com" //Send to formspree service, which then forwards to email appended at end
 
     fetch(FORMSPREE_URL,  {
       method: 'POST',
