@@ -5,18 +5,6 @@
   background-color: white;
 }
 
-#sidebar-section {
-  margin-top: 2em;
-  margin-right: 2em;
-  background-color: #294B71;
-  color: #FFF;
-}
-
-#sidebar-section #title {
-  padding-top: 0.5em;
-  text-align: center;
-}
-
 #profile {
 	height: 100%;
   padding: 2em 2em;
@@ -66,8 +54,23 @@ hr {
 
 /* Form styling */
 
+#sidebar-section {
+  margin-top: 2em;
+  margin-right: 2em;
+  background-color: #294B71;
+  color: #FFF;
+}
+
+#sidebar-section #title {
+  padding-top: 0.5em;
+  text-align: center;
+}
+
 #sidebar-section #body {
-  
+  width: 85%;
+  margin: 0px auto;
+  padding-bottom: 5%;
+  overflow: hidden;
 }
 
 input[type="text"],
