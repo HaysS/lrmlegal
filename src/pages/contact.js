@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div id="col-wrapper">
       <div id="contact-section" className="column left">
-  		<SidebarForm title={"Free Consultation Here"}/>
+  		<SidebarForm title={"Get In Touch With Us Now."}/>
       </div>
       <div className="column right">
       	<Profile />
