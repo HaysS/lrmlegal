@@ -97,11 +97,11 @@ select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    background: #fff;
+    background: rgba(255,255,255,0.75);
     margin-bottom: 4%;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     padding: 3%;
-    color: #555;
+    color: black;
     font: 95% Arial, Helvetica, sans-serif;
 }
 
@@ -115,9 +115,10 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus,
 select:focus {
-    box-shadow: 0 0 5px #43D1AF;
+    box-shadow: 0 0 5px black;
     padding: 3%;
-    border: 1px solid #43D1AF;
+    border: 1px solid black;
+    background: #fff;
 }
 
 input[type="submit"],
@@ -127,15 +128,18 @@ input[type="button"] {
     -moz-box-sizing: border-box;
     width: 100%;
     padding: 3%;
-    background: #43D1AF;
-    border-bottom: 2px solid #30C29E;
-    border-top-style: none;
-    border-right-style: none;
-    border-left-style: none;    
+    background: #00c41a;
+    border: none;
     color: #fff;
+    font-size: 1.5em;
 }
 
 input[type="submit"]:hover,
 input[type="button"]:hover {
-    background: #2EBC99;
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+    background: #387c00;
+    font-size: 2em;
 }
