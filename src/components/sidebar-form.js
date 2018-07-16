@@ -105,7 +105,7 @@ class SidebarForm extends React.Component {
 
   render() {
     return(
-      <div id="sidebar-section" class="form-style-6">
+      <div id="sidebar-section">
         <h1 id="title">Free Consultation</h1>
         <hr />
         <div id="body">
