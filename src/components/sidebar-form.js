@@ -105,7 +105,7 @@ class SidebarForm extends React.Component {
 
   render() {
     return(
-      <div id="sidebar-section">
+      <div id="sidebar-section" class="form-style-6">
         <h1 id="title">Free Consultation</h1>
         <hr />
         <div id="body">
@@ -124,7 +124,7 @@ class SidebarForm extends React.Component {
             </label>
             <label>
               Message:
-              <input type="text" name="message" value={this.state.message} onChange={this.handleChange} />
+              <textarea type="text" name="message" value={this.state.message} onChange={this.handleChange} />
             </label>
             <input type="submit" value="Submit" />
           </form>
