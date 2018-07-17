@@ -12,7 +12,6 @@ const Contact = () => {
   		<SidebarForm title={"Get In Touch With Us Now."}/>
       </div>
       <div className="column right">
-      	<Profile />
       </div>
     </div>
   );

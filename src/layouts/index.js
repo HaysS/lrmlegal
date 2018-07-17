@@ -17,8 +17,8 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' }, //Write a site description
         { name: 'keywords', content: 'sample, something' }, //Write better keywords
-      ]}
-    />
+      ]}>
+    </Helmet>
     <div id="wrapper1">
       <Header siteTitle={data.site.siteMetadata.title} />
       {children()}
