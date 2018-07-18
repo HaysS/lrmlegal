@@ -5,24 +5,6 @@
   background-color: white;
 }
 
-#profile {
-	height: 100%;
-  padding: 2em 2em;
-	text-align: center;
-}
-
-#profile-title {
-  text-align: left;
-}
-
-#profile-body {
-  padding-top: 1em;
-}
-
-#profile-text {
-  text-align: left;
-}
-
 .photo {
   float: left;
   padding: 1em 2em;
@@ -49,6 +31,30 @@
 
 hr {
   margin: 0.5em 3em;
+}
+
+#profile, #blog-posts {
+	height: 100%;
+  padding: 2em 2em;
+	text-align: center;
+}
+
+#profile-title {
+  text-align: left;
+}
+
+#profile-body {
+  padding-top: 1em;
+}
+
+#profile-text {
+  text-align: left;
+}
+
+/* Blog posts styling */
+
+#blog-posts {
+  text-align: left;
 }
 
 /* Contact page styling */

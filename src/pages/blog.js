@@ -13,7 +13,7 @@ const Blog = ({data}) => {
   return (
     <div id="col-wrapper">
       <div className="column left">
-        <div className="blog-posts">
+        <div id="blog-posts" className="blog-posts">
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)
             .map(({ node: post }) => {
