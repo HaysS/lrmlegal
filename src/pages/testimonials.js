@@ -9,6 +9,8 @@ const Testimonials = () => {
     <div id="col-wrapper">
       <div className="column left">
         <Testimonial />
+        <Testimonial />
+        <Testimonial />
       </div>
       <div className="column right">
       	<div id="sidebar-section">
