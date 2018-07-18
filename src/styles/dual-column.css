@@ -33,7 +33,7 @@ hr {
   margin: 0.5em 3em;
 }
 
-#profile, #blog-posts {
+#profile, #blog-posts, #blog-post {
 	height: 100%;
   padding: 2em 2em;
 	text-align: center;
@@ -53,7 +53,7 @@ hr {
 
 /* Blog posts styling */
 
-#blog-posts {
+#blog-posts, #blog-post {
   text-align: left;
 }
 
