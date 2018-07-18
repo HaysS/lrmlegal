@@ -12,7 +12,6 @@ const Footer = () => (
     <ul className="contact">
       <li><a href="https://twitter.com/elonmusk" className="icon icon-twitter" target="_blank"><span>Twitter</span></a></li>
       <li><a href="https://www.facebook.com/ermusk/" className="icon icon-facebook" target="_blank"><span></span></a></li>
-      {/* <li><a href="#" className="icon icon-dribbble" target="_blank"><span>Pinterest</span></a></li> */}
       {/* <li><a href="#" className="icon icon-tumblr" target="_blank"><span>Google+</span></a></li> */}
       {/* <li><a href="#" className="icon icon-rss" target="_blank"><span>Pinterest</span></a></li> */}
     </ul>
