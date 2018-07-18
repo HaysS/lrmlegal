@@ -6,12 +6,22 @@ export default function Template({data}) {
   return (
     <div className="blog-post-container">
      <Helmet title={`Leo R. Morales - ${post.frontmatter.title}`} />
-      <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+
+    <div id="col-wrapper">
+        <div className="column left">
+          <div className="blog-post">
+            <h1>{post.frontmatter.title}</h1>
+            <div
+              className="blog-post-content"
+              dangerouslySetInnerHTML={{ __html: post.html }}
+            />
+          </div>
+        </div>
+
+        <div className="column right">
+          <div id="sidebar-section">
+          </div>
+        </div>
       </div>
     </div>
   );
