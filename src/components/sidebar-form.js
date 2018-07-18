@@ -52,23 +52,28 @@ class SidebarForm extends React.Component {
 
     const FORMSPREE_URL = "//formspree.io/haysiszues@gmail.com" //Send to formspree service, which then forwards to email appended at end
 
-    fetch(FORMSPREE_URL,  {
-      method: 'POST',
-      body: this.formDataToJson(formData),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    })
-    .catch(error => console.error('Fetch error in sidebar-form component: ', error))
-    .then(response => response.json())
-    .then(response => {
-          if (response.success === 'email sent') {
-            console.log(response);
-          }
-          else {
-            //validation and error handling goes here
-          }          
-        });
+    const req = new XMLHttpRequest()
+    req.open('POST', FORMSPREE_URL)
+    req.send(formData)
+
+    // fetch(FORMSPREE_URL,  {
+    //   referrerPolicy: "origin",
+    //   method: 'POST',
+    //   body: this.formDataToJson(formData),
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    // })
+    // .catch(error => console.error('Fetch error in sidebar-form component: ', error))
+    // .then(response => response.json())
+    // .then(response => {
+    //       if (response.success === 'email sent') {
+    //         console.log(response);
+    //       }
+    //       else {
+    //         //validation and error handling goes here
+    //       }          
+    //     });
 
     this.clearFormData()
   }
