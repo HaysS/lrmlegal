@@ -33,13 +33,15 @@ hr {
   margin: 0.5em 3em;
 }
 
-#profile, #blog-posts, #blog-post {
+/* Profile styling */
+
+#profile, #blog-posts, #blog-post, #preview {
 	height: 100%;
   padding: 2em 2em;
 	text-align: center;
 }
 
-#profile-title {
+#profile-title, #preview-title {
   text-align: left;
 }
 
@@ -47,8 +49,25 @@ hr {
   padding-top: 1em;
 }
 
-#profile-text {
+#profile-text, #preview-text {
   text-align: left;
+}
+
+/* Profile preview styling */
+
+#preview {
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  background-color: #294B71;
+  color: #FFF;
+}
+
+#preview-photo {
+  height: 75%;
+  width: 75%;
+  padding: 5% 12.5%;
+  border-radius: 50%;
 }
 
 /* Blog posts styling */
@@ -77,6 +96,7 @@ hr {
 #sidebar-section {
   margin-top: 2em;
   margin-right: 2em;
+  margin-bottom: 2em;
   background-color: #294B71;
   color: #FFF;
 }

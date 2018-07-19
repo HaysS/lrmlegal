@@ -1,6 +1,6 @@
 import React from "react";
 
-import Profile from '../components/profile';
+import ProfilePreview from '../components/profile-preview'
 import SidebarForm from '../components/sidebar-form';
 
 import '../styles/blog-listing.css';
@@ -12,6 +12,7 @@ const Contact = () => {
   		<SidebarForm title={"Get In Touch With Us Now."}/>
       </div>
       <div className="column right">
+      	<ProfilePreview />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Testimonial from '../components/testimonial'
+import SidebarForm from '../components/sidebar-form';
 
 import '../styles/blog-listing.css';
 
@@ -14,6 +15,7 @@ const Testimonials = () => {
       </div>
       <div className="column right">
       	<div id="sidebar-section">
+          <SidebarForm title="Free Consultation"/>
         </div>
       </div>
     </div>

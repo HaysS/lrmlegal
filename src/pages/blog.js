@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
 
+import SidebarForm from '../components/sidebar-form';
+
 import '../styles/blog-listing.css';
 
 const Blog = ({data}) => {
@@ -31,6 +33,7 @@ const Blog = ({data}) => {
       </div>
       <div className="column right">
         <div id="sidebar-section">
+          <SidebarForm title="Free Consultation"/>
         </div>
       </div>
     </div>
