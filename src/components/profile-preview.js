@@ -4,6 +4,7 @@ const ProfilePreview = () => (
   <div>
     <div id="preview">
       <h1 id="preview-title">Contact Leo R. Morales</h1>
+      <hr />
       <div id="preview-body">
         <img id="preview-photo" className="photo" src={require("../images/lrm-headshot.jpg")} />
         <p id="preview-text">
