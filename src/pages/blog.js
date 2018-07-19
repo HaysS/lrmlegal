@@ -37,6 +37,8 @@ const Blog = ({data}) => {
   );
 }
 
+export default Blog
+
 export const pageQuery = graphql`
   query BlogQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
@@ -55,4 +57,3 @@ export const pageQuery = graphql`
   }
 `;
 
-export default Blog
