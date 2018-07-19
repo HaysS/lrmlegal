@@ -12,12 +12,15 @@ export default function Template({data}) {
       <div id="col-wrapper">
           <div className="column left">
             <div id="blog-post" className="blog-post">
+              <br />
               <h1>{post.frontmatter.title}</h1>
+              <br />
               <div
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: post.html }}
               />
             </div>
+            <br />
           </div>
 
           <div className="column right">

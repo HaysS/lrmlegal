@@ -40,22 +40,22 @@ const Portfolio = () => (
       <div className="row2">
         <div className="column1">
           <div className="box">
-            <a href="#" className="button button-small">Learn More</a> 
+            <Link to="/government-transactions" className="button button-small">Learn More</Link>
           </div>
         </div>
         <div className="column2">
           <div className="box">
-            <a href="#" className="button button-small">Learn More</a> 
+            <Link to="/corporate-tech" className="button button-small">Learn More</Link>
           </div>
         </div>
         <div className="column3">
           <div className="box">
-            <a href="#" className="button button-small">Learn More</a> 
+            <Link to="/debt-collection" className="button button-small">Learn More</Link>
           </div>
         </div>
         <div className="column4">
           <div className="box">
-            <a href="#" className="button button-small">Learn More</a> 
+            <Link to="/software-licensing" className="button button-small">Learn More</Link>
           </div>
         </div>
       </div>
