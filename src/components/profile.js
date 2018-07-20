@@ -5,7 +5,7 @@ const Profile = () => (
     <h1 id="profile-title">Attorney Leo R. Morales</h1>
     <div id="profile-body">
       <p id="profile-text">
-        <img id="welcome-photo" className="photo" src={require("../images/lrm-headshot.jpg")} />
+        {/*<img id="welcome-photo" className="photo" src={require("../images/lrm-headshot.jpg")} />*/}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus enim nibh, efficitur blandit sapien pulvinar non. Vestibulum gravida volutpat lorem, in iaculis risus euismod consequat. Suspendisse lacinia posuere nibh eget mattis. Quisque rhoncus nisl at placerat viverra. Cras condimentum egestas nisl, rutrum venenatis orci suscipit in. Donec volutpat dui non neque commodo ornare. Quisque fermentum vestibulum nibh a sollicitudin. Phasellus consectetur augue id aliquet ornare.
         <br /><br />
         Ut nibh quam, aliquam nec ante sit amet, luctus lacinia tellus. Maecenas aliquet turpis a tortor pharetra, nec blandit nulla malesuada. Suspendisse luctus sed risus vitae accumsan. Pellentesque vehicula euismod neque eu feugiat. Donec facilisis volutpat luctus. Mauris vestibulum in dolor sit amet mattis. Morbi massa mauris, euismod fringilla dictum nec, elementum ut neque. Integer finibus neque nulla, vitae feugiat justo pellentesque pellentesque. Donec tincidunt et urna ut dapibus. Vestibulum sit amet tempus nisi. In vestibulum, erat id pharetra egestas, tellus quam auctor velit, nec aliquam dolor enim at justo.
