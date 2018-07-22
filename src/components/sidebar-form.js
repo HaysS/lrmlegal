@@ -42,7 +42,7 @@ class SidebarForm extends React.Component {
     formData.append("email", this.state.email)
     formData.append("message", this.state.message)
 
-    fetch('/',  {
+    fetch('/about/',  {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: this.formDataToJson(formData),
