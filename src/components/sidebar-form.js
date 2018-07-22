@@ -34,38 +34,35 @@ class SidebarForm extends React.Component {
     }
   }
 
-  sendFormData() {
+  sendFormData(e) {
     const formData = new FormData()
+    formData.append("form-name", "contact")
     formData.append("name", this.state.name)
     formData.append("phone", this.state.phone)
     formData.append("email", this.state.email)
     formData.append("message", this.state.message)
-    formData.append("_gotcha", "") //prevents spam
 
-    const FORMSPREE_URL = "//formspree.io/haysiszues@gmail.com" //Send to formspree service, which then forwards to email appended at end
+    // const FORMSPREE_URL = "//formspree.io/haysiszues@gmail.com" //Send to formspree service, which then forwards to email appended at end
 
-    const req = new XMLHttpRequest()
-    req.open('POST', FORMSPREE_URL)
-    req.send(formData)
+    // const req = new XMLHttpRequest()
+    // req.open('POST', FORMSPREE_URL)
+    // req.send(formData)
 
-    // fetch(FORMSPREE_URL,  {
-    //   referrerPolicy: "origin",
-    //   method: 'POST',
-    //   body: this.formDataToJson(formData),
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    // })
-    // .catch(error => console.error('Fetch error in sidebar-form component: ', error))
-    // .then(response => response.json())
-    // .then(response => {
-    //       if (response.success === 'email sent') {
-    //         console.log(response);
-    //       }
-    //       else {
-    //         //validation and error handling goes here
-    //       }          
-    //     });
+    fetch('/',  {
+      method: 'POST',
+      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+      body: formData,
+    })
+    .catch(error => console.error('Fetch error in sidebar-form component: ', error))
+    .then(response => response.json())
+    .then(response => {
+          if (response.success === 'email sent') {
+            console.log(response);
+          }
+          else {
+            //validation and error handling goes here
+          }          
+        });
 
     this.clearFormData()
   }
