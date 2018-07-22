@@ -42,41 +42,15 @@ class SidebarForm extends React.Component {
     formData.append("email", this.state.email)
     formData.append("message", this.state.message)
 
-    // const FORMSPREE_URL = "//formspree.io/haysiszues@gmail.com" //Send to formspree service, which then forwards to email appended at end
-
-    // const req = new XMLHttpRequest()
-    // req.open('POST', FORMSPREE_URL)
-    // req.send(formData)
-
     fetch('/',  {
       method: 'POST',
       headers: {'Content-Type': 'application/x-www-form-urlencoded'},
       body: formData,
     })
-    .catch(error => console.error('Fetch error in sidebar-form component: ', error))
-    .then(response => response.json())
-    .then(response => {
-          if (response.success === 'email sent') {
-            console.log(response);
-          }
-          else {
-            //validation and error handling goes here
-          }          
-        });
+    .then(() => console.log("Contact form submission successful."))
+    .catch(error => alert(error));
 
     this.clearFormData()
-  }
-
-  formDataToJson(formData) {
-    var object = {};
-
-    formData.forEach(function(value, key){
-        object[key] = value;
-    });
-
-    var json = JSON.stringify(object);
-
-    return json;
   }
 
   clearFormData() {
@@ -103,7 +77,7 @@ class SidebarForm extends React.Component {
         <h1 id="title">{this.props.title}</h1>
         <hr />
         <div id="body">
-          <form name="contact" onSubmit={this.handleSubmit}>
+          <form name="contact" onSubmit={this.handleSubmit} data-netlify="true">
             <input type="text" name="name" value={this.state.name} placeholder={"Full name"} onChange={this.handleChange} />
             <input type="text" name="phone" value={this.state.phone} placeholder={"Phone number"} onChange={this.handleChange} />
             <input type="email" name="email" value={this.state.email} placeholder={"Email"} onChange={this.handleChange} />
