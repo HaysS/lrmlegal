@@ -44,14 +44,26 @@ class SidebarForm extends React.Component {
 
     fetch('/',  {
       method: 'POST',
-      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-      body: formData,
+      headers: {'Content-Type': 'application/json'},
+      body: this.formDataToJson(formData),
     })
     .then(() => console.log("Contact form submission successful."))
     .catch(error => alert(error));
 
     this.clearFormData()
   }
+
+  formDataToJson(formData) {
+    var object = {};
+
+    formData.forEach(function(value, key){
+      object[key] = value;
+    });
+
+    var json = JSON.stringify(object);
+
+    return json;
+ }
 
   clearFormData() {
     this.setState({
