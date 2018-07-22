@@ -89,7 +89,7 @@ class SidebarForm extends React.Component {
         <h1 id="title">{this.props.title}</h1>
         <hr />
         <div id="body">
-          <form name="contact" onSubmit={this.handleSubmit} data-netlify="true">
+          <form name="contact" method="POST" onSubmit={this.handleSubmit} data-netlify="true">
             <input type="text" name="name" value={this.state.name} placeholder={"Full name"} onChange={this.handleChange} />
             <input type="text" name="phone" value={this.state.phone} placeholder={"Phone number"} onChange={this.handleChange} />
             <input type="email" name="email" value={this.state.email} placeholder={"Email"} onChange={this.handleChange} />
