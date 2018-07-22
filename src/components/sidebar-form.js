@@ -17,15 +17,7 @@ class SidebarForm extends React.Component {
   handleChange(e) {
     e.preventDefault()
 
-    if(e.target.name == "name") {
-      this.setState({name: e.target.value});
-    } else if(e.target.name == "phone") {
-      this.setState({phone: e.target.value});
-    } else if(e.target.name == "email") {
-      this.setState({email: e.target.value});
-    } else if(e.target.name == "message") {
-      this.setState({message: e.target.value});
-    }  
+    this.setState({[e.target.name]: e.target.value});
   }
 
   handleSubmit(e) {
@@ -115,7 +107,6 @@ class SidebarForm extends React.Component {
         <hr />
         <div id="body">
           <form onSubmit={this.handleSubmit}>
-            {/*all form inputs must have a name="..." attribute to work with Formspree (which is being used)*/}
             <input type="text" name="name" value={this.state.name} placeholder={"Full name"} onChange={this.handleChange} />
             <input type="text" name="phone" value={this.state.phone} placeholder={"Phone number"} onChange={this.handleChange} />
             <input type="email" name="email" value={this.state.email} placeholder={"Email"} onChange={this.handleChange} />
