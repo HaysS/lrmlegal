@@ -34,7 +34,7 @@ class SidebarForm extends React.Component {
     }
   }
 
-  sendFormData(e) {
+  sendFormData() {
     const formData = new FormData()
     formData.append("form-name", "contact")
     formData.append("name", this.state.name)
