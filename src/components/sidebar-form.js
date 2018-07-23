@@ -11,76 +11,12 @@ class SidebarForm extends React.Component {
     };
 
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
     e.preventDefault()
 
     this.setState({[e.target.name]: e.target.value});
-  }
-
-  handleSubmit(e) {
-    e.preventDefault();
-
-    if(this.validateEmail(this.state.email) && this.validateName(this.state.name)) {
-      // alert('This data was submitted: name: '+this.state.name+' phone: '+this.state.phone+' email: '+this.state.email+' message: '+this.state.message);
-      this.sendFormData()
-    } else {
-      if(!this.validateName(this.state.name))
-        alert('You have entered an invalid name.')
-      else if(!this.validateEmail(this.state.email)) 
-        alert('You have entered an invalid email.')
-    }
-  }
-
-  sendFormData() {
-    const formData = new FormData()
-    formData.append("form-name", "contact")
-    formData.append("name", this.state.name)
-    formData.append("phone", this.state.phone)
-    formData.append("email", this.state.email)
-    formData.append("message", this.state.message)
-
-    fetch('/',  {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: this.formDataToJson(formData),
-    })
-    .then(() => console.log("Contact form submission successful."))
-    .catch(error => alert(error));
-
-    this.clearFormData()
-  }
-
-  formDataToJson(formData) {
-    var object = {};
-
-    formData.forEach(function(value, key){
-      object[key] = value;
-    });
-
-    var json = JSON.stringify(object);
-
-    return json;
- }
-
-  clearFormData() {
-    this.setState({
-      name: '',
-      phone: '',
-      email: '',
-      message: '',
-    });
-  }
-
-  validateName(name) {
-    return name.length > 0 && name.length < 30 ? true : false
-  }
-
-  validateEmail(email) {
-    const re = /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
-    return re.test(email)
   }
 
   render() {
