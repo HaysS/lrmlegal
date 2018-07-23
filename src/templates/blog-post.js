@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 
-import SidebarForm from '../components/sidebar-form';
+import ContactForm from '../components/contact-form';
 
 export default function Template({data}) {
   const post = data.markdownRemark; 
@@ -25,7 +25,7 @@ export default function Template({data}) {
 
           <div className="column right">
             <div id="sidebar-section">
-              <SidebarForm title="Free Consultation"/>
+              <ContactForm title="Free Consultation"/>
             </div>
           </div>
         </div>

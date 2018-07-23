@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 
-import SidebarForm from '../components/sidebar-form';
+import ContactForm from '../components/contact-form';
 
 import '../styles/blog-listing.css';
 
@@ -33,7 +33,7 @@ const Blog = ({data}) => {
       </div>
       <div className="column right">
         <div id="sidebar-section">
-          <SidebarForm title="Free Consultation"/>
+          <ContactForm title="Free Consultation"/>
         </div>
       </div>
     </div>
