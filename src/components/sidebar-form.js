@@ -90,6 +90,7 @@ class SidebarForm extends React.Component {
         <hr />
         <div id="body">
           <form name="contact" action="#" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
             <input type="hidden" name="bot-field" />
             <input type="text" name="name" value={this.state.name} placeholder={"Full name"} onChange={this.handleChange} />
             <input type="text" name="phone" value={this.state.phone} placeholder={"Phone number"} onChange={this.handleChange} />
